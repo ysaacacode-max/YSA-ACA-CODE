@@ -1,197 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YSA ACA CODE | Academic Commissioner</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YSA ACA CODE | Academic Commissioner</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
 
-        body {
-            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
-                        url("images/background.png") center/cover no-repeat fixed;
-            color: white;
-        }
+body{
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+                url("background.png") center/cover no-repeat fixed;
+    color:white;
+}
 
-        /* Main Layout */
-        .wrapper {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 40px;
-            height: 100vh;
-        }
+/* Main Layout */
+.wrapper{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+    height:100vh;
+}
 
-        /* LEFT SIDE (Avatar as Video) */
-        .left {
-            flex: 0.3;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+/* LEFT SIDE (Avatar as Video) */
+.left{
+    flex: 0.3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-        /* Video Avatar */
-        .avatar {
-            width: 600px;
-            height: 600px;
-            border-radius: 50%;
-            object-fit: cover;
-            animation: float 4s ease-in-out infinite;
-        }
+/* Video Avatar */
+.avatar {
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    object-fit: cover;
+    animation: float 4s ease-in-out infinite;
+}
 
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-15px); }
-            100% { transform: translateY(0px); }
-        }
+@keyframes float{
+    0%{transform:translateY(0px);}
+    50%{transform:translateY(-15px);}
+    100%{transform:translateY(0px);}
+}
 
-        /* Centered Content (Logo + Text) */
-        .right {
-            flex: 0.7;
-            text-align: center;
-            padding: 0 40px;
-        }
+/* Centered Content (Logo + Text) */
+.right{
+    flex: 0.7;
+    text-align:center;
+    padding:0 40px;
+}
 
-        /* Logo Circle */
-        .logo-circle {
-            width: 200px;
-            height: 200px;
-            margin-bottom: 20px;
-            border-radius: 50%;
-            overflow: hidden;
-            border: 4px solid gold;
-            box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
-            animation: logo-float 4s ease-in-out infinite;
-            margin-left: auto;
-            margin-right: auto;
-        }
+/* Logo Circle */
+.logo-circle{
+    width:200px;
+    height:200px;
+    margin-bottom:20px;
+    border-radius:50%;
+    overflow:hidden;
+    border:4px solid gold;
+    box-shadow:0 0 20px rgba(255,215,0,0.4);
+    animation: logo-float 4s ease-in-out infinite;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-        .logo-circle img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+.logo-circle img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
 
-        @keyframes logo-float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
-            100% { transform: translateY(0px); }
-        }
+@keyframes logo-float{
+    0%{transform:translateY(0px);}
+    50%{transform:translateY(-20px);}
+    100%{transform:translateY(0px);}
+}
 
-        /* Text */
-        h1 {
-            font-size: 38px;
-            font-weight: 800;
-            letter-spacing: 2px;
-        }
+/* Text */
+h1{
+    font-size:38px;
+    font-weight:800;
+    letter-spacing:2px;
+}
 
-        .subtitle {
-            color: gold;
-            margin-bottom: 20px;
-        }
+.subtitle{
+    color:gold;
+    margin-bottom:20px;
+}
 
-        .description {
-            line-height: 1.6;
-            color: #ddd;
-            margin-bottom: 20px;
-        }
+.description{
+    line-height:1.6;
+    color:#ddd;
+    margin-bottom:20px;
+}
 
-        /* Buttons */
-        .btn {
-            display: block;
-            text-decoration: none;
-            background: gold;
-            color: black;
-            padding: 15px;
-            margin: 12px 0;
-            border-radius: 12px;
-            font-weight: 600;
-            transition: 0.3s;
-        }
+/* Buttons */
+.btn{
+    display:block;
+    text-decoration:none;
+    background:gold;
+    color:black;
+    padding:15px;
+    margin:12px 0;
+    border-radius:12px;
+    font-weight:600;
+    transition:0.3s;
+}
 
-        .btn:hover {
-            background: white;
-            transform: scale(1.05);
-        }
+.btn:hover{
+    background:white;
+    transform:scale(1.05);
+}
 
-        /* Responsive Design for Mobile */
-        @media (max-width: 900px) {
-            .wrapper {
-                flex-direction: column;
-                text-align: center;
-            }
+/* Responsive Design for Mobile */
+@media(max-width:900px){
+    .wrapper{
+        flex-direction:column;
+        text-align:center;
+    }
+    .left{
+        margin-bottom:30px;
+    }
+}
 
-            .left {
-                margin-bottom: 30px;
-            }
-        }
+/* Modal (Popup) Styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Black background with opacity */
+    overflow: auto;
+    padding-top: 60px;
+}
 
-        /* Modal (Popup) Styling */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
-            overflow: auto;
-            padding-top: 60px;
-        }
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+}
 
-        .modal-content {
-            background-color: #fefefe;
-            margin: 5% auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-            max-width: 600px;
-        }
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
 
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
 
-        .close:hover,
-        .close:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
-        }
-    </style>
+</style>
 </head>
 <body>
 
 <div class="wrapper">
+
     <!-- LEFT SIDE (Avatar as Video) -->
     <div class="left">
         <video class="avatar" autoplay loop muted>
-            <source src="videos/avatar-video" type="video/mp4">
-            <source src="videos/avatar-video.webm" type="video/webm">
-            <source src="videos/avatar-video.ogv" type="video/ogg">
+            <source src="avatar-video.mp4" type="video/mp4">
+            <source src="avatar-video.webm" type="video/webm">
+            <source src="avatar-video.ogv" type="video/ogg">
         </video>
     </div>
 
     <!-- RIGHT SIDE (Logo & Content) -->
     <div class="right">
+
         <!-- Logo inside circle -->
         <div class="logo-circle">
-            <img src="images/Logo" alt="Logo">
+            <img src="logo.png" alt="Logo">
         </div>
+
         <h1>YSA ACA CODE</h1>
         <div class="subtitle">Academic Commissioner</div>
+
         <div class="description">
             Good day! I’m your Academic Commissioner, dedicated to making your academic life stress-free and successful.
             <br><br>
@@ -203,77 +207,83 @@
             📩 Message Me on Facebook
         </a>
 
-        <a href="javascript:void(0)" id="priceListBtn" class="btn">📂 View Services Offered/Price List</a>
-        <a href="javascript:void(0)" id="myBtn" class="btn">📜 View DTI Certificate</a>
+        <!-- Replace "View Portfolio" with "View Services Offered/Price List" -->
+        <a href="javascript:void(0)" id="serviceBtn" class="btn">📋 View Services Offered/Price List</a>
+
+        <!-- View DTI Certificate -->
+        <a href="javascript:void(0)" id="dtiBtn" class="btn">📜 View DTI Certificate</a>
 
     </div>
+
 </div>
 
-<!-- The Modal (popup for Price List) -->
-<div id="priceModal" class="modal">
+<!-- The Modal (popup for the services/price list) -->
+<div id="serviceModal" class="modal">
+
     <!-- Modal content -->
     <div class="modal-content">
-        <span class="close" id="priceClose">&times;</span> <!-- Close button -->
-        <img src="Price List/Front Page" alt="Price List Front Page" style="width: 100%; height: auto;">
-        <img src="Price List/Price List" alt="Price List" style="width: 100%; height: auto;">
-        <img src="Price List/Research" alt="Research" style="width: 100%; height: auto;">
-        <img src="Price List/Research Undergrad.jpg" alt="Undergraduate Research" style="width: 100%; height: auto;">
+        <span class="close" id="serviceClose">&times;</span> <!-- Close button -->
+        <!-- Display images of price list, services, etc. -->
+        <img src="Price List/Front Page.jpg" alt="Front Page" style="width: 100%; height: auto;">
+        <img src="Price List/Price List.jpg" alt="Price List" style="width: 100%; height: auto;">
+        <img src="Price List/Research 2.jpg" alt="Research 2" style="width: 100%; height: auto;">
+        <img src="Price List/Research.jpg" alt="Research" style="width: 100%; height: auto;">
     </div>
+
 </div>
 
-<!-- The Modal (popup for the DTI Certificate) -->
-<div id="myModal" class="modal">
+<!-- The Modal (popup for DTI Certificate) -->
+<div id="dtiModal" class="modal">
+
     <!-- Modal content -->
     <div class="modal-content">
         <span class="close" id="dtiClose">&times;</span> <!-- Close button -->
-        <img src="Price List/DTI Certificate.jpg" alt="DTI Certificate" style="width: 100%; height: auto;">
+        <img src="certificate.png" alt="DTI Certificate" style="width: 100%; height: auto;"> <!-- The certificate image -->
     </div>
+
 </div>
 
 <script>
-// Get the modal elements
-var priceModal = document.getElementById("priceModal");
-var myModal = document.getElementById("myModal");
+// Get the modals
+var serviceModal = document.getElementById("serviceModal");
+var dtiModal = document.getElementById("dtiModal");
 
 // Get the buttons that open the modals
-var priceBtn = document.getElementById("priceListBtn");
-var dtiBtn = document.getElementById("myBtn");
+var serviceBtn = document.getElementById("serviceBtn");
+var dtiBtn = document.getElementById("dtiBtn");
 
 // Get the <span> elements that close the modals
-var priceClose = document.getElementById("priceClose");
+var serviceClose = document.getElementById("serviceClose");
 var dtiClose = document.getElementById("dtiClose");
 
-// Open Price List modal
-priceBtn.onclick = function() {
-    priceModal.style.display = "block";
+// When the user clicks the button, open the respective modal
+serviceBtn.onclick = function() {
+    serviceModal.style.display = "block";
 }
 
-// Open DTI Certificate modal
 dtiBtn.onclick = function() {
-    myModal.style.display = "block";
+    dtiModal.style.display = "block";
 }
 
-// Close Price List modal
-priceClose.onclick = function() {
-    priceModal.style.display = "none";
+// When the user clicks on <span> (x), close the respective modal
+serviceClose.onclick = function() {
+    serviceModal.style.display = "none";
 }
 
-// Close DTI Certificate modal
 dtiClose.onclick = function() {
-    myModal.style.display = "none";
+    dtiModal.style.display = "none";
 }
 
-// Close modals if the user clicks outside of them
+// When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-    if (event.target == priceModal) {
-        priceModal.style.display = "none";
+    if (event.target == serviceModal) {
+        serviceModal.style.display = "none";
     }
-    if (event.target == myModal) {
-        myModal.style.display = "none";
+    if (event.target == dtiModal) {
+        dtiModal.style.display = "none";
     }
 }
 </script>
 
 </body>
 </html>
-
