@@ -39,11 +39,12 @@ body{
 }
 
 /* Video Avatar */
-.<video class="avatar" autoplay loop muted>
-    <source src="videos/avatar-video.mp4" type="video/mp4">
-    <source src="videos/avatar-video.webm" type="video/webm">
-    <source src="videos/avatar-video.ogv" type="video/ogg">
-</video>
+.avatar {
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    object-fit: cover;
+    animation: float 4s ease-in-out infinite;
 }
 
 @keyframes float{
@@ -60,9 +61,17 @@ body{
 }
 
 /* Logo Circle */
-<div class="logo-circle">
-    <img src="images/logo.png" alt="Logo">
-</div>
+.logo-circle{
+    width:200px;
+    height:200px;
+    margin-bottom:20px;
+    border-radius:50%;
+    overflow:hidden;
+    border:4px solid gold;
+    box-shadow:0 0 20px rgba(255,215,0,0.4);
+    animation: logo-float 4s ease-in-out infinite;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .logo-circle img{
@@ -278,4 +287,3 @@ window.onclick = function(event) {
 
 </body>
 </html>
-
